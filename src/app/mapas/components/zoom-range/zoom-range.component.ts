@@ -53,7 +53,6 @@ export class ZoomRangeComponent implements OnInit, AfterViewInit, OnDestroy {
     this.mapa.zoomTo(Number(event));
   }
 
-  n;
 
   ngOnInit(): void {
     // this.mapa = new mapboxgl.Map({
