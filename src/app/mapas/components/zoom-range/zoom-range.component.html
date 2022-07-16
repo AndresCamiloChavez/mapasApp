@@ -3,7 +3,7 @@
     <div class="col">
         <label class="form-label">
             Zoom: {{zoomLevel | number:'2.0-2'}}
-            - Lng,Lat: [123,456]
+            - Lng,Lat: {{center[0] | number: '2.4-4'}} {{center[1] | number: '2.4-4'}}
         </label>
         <input min="0" max="18" type="range" [value]="zoomLevel" class="form-range" (input)="onChangeInput(zoomInput.value)" #zoomInput>
     </div>
